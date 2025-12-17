@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jumping Jack-2D Game | Portfolio</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="icon" href="favicon.ico"/>
+        <style>
+            .game-header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                background: rgba(10, 14, 39, 0.95);
+                padding: 10px 20px;
+                z-index: 1001;
+                border-bottom: 2px solid rgba(0, 255, 136, 0.3);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .game-header h1 {
+                margin: 0;
+                color: #00ff88;
+                font-size: 1.5rem;
+                font-family: Arial, sans-serif;
+            }
+            .game-header a {
+                color: #00d4ff;
+                text-decoration: none;
+                font-size: 0.9rem;
+                transition: color 0.3s;
+            }
+            .game-header a:hover {
+                color: #00ff88;
+            }
+            .background {
+                margin-top: 50px;
+            }
+        </style>
+    </head>
+    <body class="body" onkeyup="keyCheck(event);">
+        <div class="game-header">
+            <h1>🎮 Jumping Jack</h1>
+            <a href="../../index.html">← Back to Portfolio</a>
+        </div>
+
+        <div class="background" id="background">
+
+        <div class="score" id="score" onclick="alerts();" onmouseup="scoreAnimate();">Let's Play</div>
+
+            <img src="Run (1).png" class="boy" id="boy"/>
+        </div>
+          
+        <div class="gameOver" id="gameOver">
+              <div class="g1">Game Over !</div>
+              <div class="g2">Your Score</div>
+              <div id="endScore" class="endScore">0</div>
+
+              <button class="btn" id="btn" onclick="re();" onmouseup="buttonAnimate();">Try Again</button>
+              <a href="../../index.html" style="margin-top: 20px; color: #00d4ff; text-decoration: none; cursor: pointer;">← Back to Portfolio</a>
+        </div>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>

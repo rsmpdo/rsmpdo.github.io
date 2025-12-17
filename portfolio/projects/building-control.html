@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Control System | Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="../index.html" class="logo">⚡ Portfolio</a>
+        <ul>
+            <li><a href="../index.html#designs">Design & Video</a></li>
+            <li><a href="../index.html#engineering">Engineering</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Project Detail -->
+    <div class="project-detail">
+        <div class="detail-container">
+            <a href="../index.html#engineering" class="back-button">← Back to Projects</a>
+
+            <div class="detail-header">
+                <h1>Engineering Service Building - Integrated Building Management System</h1>
+                <p>Comprehensive IoT Building Automation with Multiple Subsystems | Nov 2025 - Dec 2025</p>
+            </div>
+
+            <div class="detail-content">
+                <!-- Overview -->
+                <div class="detail-section">
+                    <h2>Project Overview</h2>
+                    <p>
+                        This is a comprehensive Integrated Building Management System developed as a semester project at the University of Ruhuna. The system demonstrates advanced IoT integration combining multiple embedded systems and microcontrollers working seamlessly through a centralized web-based control interface.
+                    </p>
+                    <p>
+                        The project showcases expertise in embedded systems, hardware-software integration, and IoT communication protocols. It manages five critical building subsystems - lighting, fire detection, access control, surveillance, and elevator operations - all controlled through a unified web dashboard.
+                    </p>
+                    <p>
+                        <strong>Project Timeline:</strong> November 2025 - December 2025<br>
+                        <strong>Associated with:</strong> University of Ruhuna<br>
+                        <strong>Team:</strong> Shashika Madhusankha, Omindu Sanvida and Bhanuka Prabath
+                    </p>
+                </div>
+
+                <!-- Features -->
+                <div class="detail-section">
+                    <h2>System Subsystems & Features</h2>
+                    
+                    <h3>💡 Lighting Control System</h3>
+                    <ul>
+                        <li>Managed directly by ESP32 Dev module</li>
+                        <li>LED strips and individual LEDs controlled through relays</li>
+                        <li>Fully controllable via web dashboard</li>
+                        <li>Real-time status monitoring</li>
+                    </ul>
+                    
+                    <h3>🔥 Fire Alarm System (Arduino Mega)</h3>
+                    <ul>
+                        <li>DHT11 sensors detect fire conditions through temperature & humidity monitoring</li>
+                        <li>Automated response: Motor activates water vapor for 30 seconds</li>
+                        <li>Alarm triggers for 45 seconds with blinking red LEDs and buzzers</li>
+                        <li>Manual web-based trigger override for LEDs and buzzers</li>
+                        <li>Feedback LED indicator for system status</li>
+                    </ul>
+
+                    <h3>🚗 Car Park Gate System (Arduino Uno)</h3>
+                    <ul>
+                        <li>Two RFID readers for entry and exit access control</li>
+                        <li>Servo motor controls 90-degree gate rotation</li>
+                        <li>Auto-close functionality: Gate closes after 3 seconds automatically</li>
+                        <li>Safety feature: Tag reading disabled while gate is open</li>
+                        <li>Manual gate operation available via website</li>
+                    </ul>
+
+                    <h3>📹 CCTV Surveillance System</h3>
+                    <ul>
+                        <li>ESP32-CAM module provides live video feed</li>
+                        <li>Captured images stored on SD card</li>
+                        <li>Live feed embedded in the main control website</li>
+                        <li>Real-time monitoring capability</li>
+                    </ul>
+
+                    <h3>🛗 Elevator Control System (Arduino Uno)</h3>
+                    <ul>
+                        <li>NEMA17 stepper motor for precise movement control</li>
+                        <li>Arduino EEPROM stores current cabin position (survives power loss)</li>
+                        <li>Accurate floor stops using precise step counting</li>
+                        <li>Target floor requests via Serial communication</li>
+                        <li>Real-time current floor display</li>
+                    </ul>
+                </div>
+
+                <!-- Technical Architecture -->
+                <div class="detail-section">
+                    <h2>Architecture & Technical Stack</h2>
+                    
+                    <h3>🔌 Hardware Architecture</h3>
+                    
+                    <h4>Master Node: ESP32 Dev Module</h4>
+                    <ul>
+                        <li>Hosts the web server using WiFiServer</li>
+                        <li>Manages direct communication with Arduino Mega and Unos via UART Serial</li>
+                        <li>Controls lighting system directly</li>
+                        <li>Integrates ESP32-CAM for live video feed</li>
+                    </ul>
+
+                    <h4>Slave Nodes & Communication</h4>
+                    <ul>
+                        <li><strong>Arduino Mega:</strong> Fire Alarm System with DHT11 sensors, relays, and motor control</li>
+                        <li><strong>Arduino Uno (1):</strong> Car Park Gate System with RFID readers and servo motor</li>
+                        <li><strong>Arduino Uno (2):</strong> Elevator Control with stepper motor and EEPROM</li>
+                        <li><strong>ESP32-CAM:</strong> CCTV surveillance with SD card storage</li>
+                        <li><strong>Communication Protocol:</strong> UART Serial for inter-device communication</li>
+                    </ul>
+
+                    <h3>💻 Software Stack</h3>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML, CSS, and JavaScript web interface</li>
+                        <li><strong>Backend:</strong> Arduino/ESP32 firmware programmed in C++</li>
+                        <li><strong>Web Server:</strong> WiFiServer on ESP32 Dev module</li>
+                        <li><strong>Communication:</strong> UART Serial protocol between microcontrollers</li>
+                        <li><strong>Storage:</strong> Arduino EEPROM, SD card for images</li>
+                    </ul>
+
+                    <h3>🛠️ Key Technologies</h3>
+                    <ul>
+                        <li>Embedded Systems & Microcontroller Programming</li>
+                        <li>Internet of Things (IoT) Integration</li>
+                        <li>Electronics & Circuit Design</li>
+                        <li>UART Serial Communication</li>
+                        <li>Web Development (HTML, CSS, JavaScript)</li>
+                        <li>Sensor Integration (DHT11, RFID)</li>
+                        <li>Motor Control (Stepper, Servo)</li>
+                        <li>Real-time Video Streaming</li>
+                    </ul>
+
+                    <h3>📊 System Specifications</h3>
+                    <ul>
+                        <li>Real-time response to all subsystems</li>
+                        <li>Centralized web-based control interface</li>
+                        <li>Data persistence via EEPROM and SD card</li>
+                        <li>Scalable architecture for additional subsystems</li>
+                        <li>Reliable UART communication between nodes</li>
+                    </ul>
+                </div>
+
+                <!-- System Dashboard -->
+                <div class="detail-section">
+                    <h2>Centralized Control Dashboard</h2>
+                    <p>
+                        The web-based dashboard provides unified control for all five subsystems. Users can monitor sensor readings in real-time, view live CCTV footage, manually trigger alarms, control lighting, operate gates, and manage elevator operations all from a single interface.
+                    </p>
+                    <p>
+                        The responsive design works across desktop and mobile devices, enabling facility managers to control the building from anywhere with internet access.
+                    </p>
+                    <div class="media-container">
+                        <img src="../assets/images/Screenshot 2025-11-21 173815.png" alt="Building Management Dashboard Interface" style="background: linear-gradient(135deg, #1a3d5c 0%, #0a1f3d 100%); padding: 20px;">
+                    </div>
+                </div>
+
+                <!-- Performance Metrics -->
+                <div class="detail-section">
+                    <h2>Project Achievements</h2>
+                    
+                    <h3>Integration Success</h3>
+                    <ul>
+                        <li>Successfully integrated 5 independent subsystems into one unified platform</li>
+                        <li>Real-time control of multiple microcontrollers via single web interface</li>
+                        <li>Seamless UART Serial communication between all nodes</li>
+                        <li>Live video streaming from ESP32-CAM integrated into web dashboard</li>
+                    </ul>
+
+                    <h3>Technical Accomplishments</h3>
+                    <ul>
+                        <li>Multi-microcontroller architecture with reliable master-slave communication</li>
+                        <li>Persistent state management using EEPROM (elevator position retention)</li>
+                        <li>Autonomous system operations with emergency override capabilities</li>
+                        <li>Sensor-based automated responses (fire detection and alarm)</li>
+                        <li>Advanced access control with RFID technology</li>
+                    </ul>
+
+                    <h3>Demonstrated Skills</h3>
+                    <ul>
+                        <li>Embedded Systems & Microcontroller Programming</li>
+                        <li>Electronics & Hardware Assembly</li>
+                        <li>IoT System Design and Integration</li>
+                        <li>UART Serial Communication Protocols</li>
+                        <li>Web Development (HTML, CSS, JavaScript)</li>
+                        <li>Project Management & Team Collaboration</li>
+                    </ul>
+                </div>
+
+                <!-- Implementation Timeline -->
+                <div class="detail-section">
+                    <h2>Project Development Timeline</h2>
+                    <h3>Phase 1: Planning & Design (November 2025 - Week 1)</h3>
+                    <p>System architecture design, subsystem identification, component selection, and hardware planning</p>
+
+                    <h3>Phase 2: Hardware Assembly & Testing (November 2025 - Week 2-3)</h3>
+                    <p>Component assembly, circuit construction, individual subsystem testing, team hardware collaboration with Omindu and Bhanuka</p>
+
+                    <h3>Phase 3: Firmware Development (November 2025 - Week 3-4)</h3>
+                    <p>Arduino/ESP32 firmware development for each subsystem, UART communication implementation, individual testing</p>
+
+                    <h3>Phase 4: Integration & Web Interface (December 2025 - Week 1)</h3>
+                    <p>Subsystem integration, web dashboard development, master-slave communication implementation, live video streaming setup</p>
+
+                    <h3>Phase 5: Testing & Deployment (December 2025 - Week 2)</h3>
+                    <p>System-wide testing, bug fixes, documentation, and final project submission</p>
+                </div>
+
+                <!-- Use Cases -->
+                <div class="detail-section">
+                    <h2>Real-World Applications</h2>
+                    
+                    <h3>🏢 Office & Commercial Buildings</h3>
+                    <p>
+                        This system demonstrates how modern buildings can benefit from integrated automation. The lighting system adjusts based on occupancy, the fire alarm provides critical safety, and the elevator system ensures smooth operations.
+                    </p>
+
+                    <h3>🏫 Educational Institutions</h3>
+                    <p>
+                        Universities and schools can deploy similar systems to manage multiple buildings, improve safety with automated fire detection, and provide efficient access control through RFID technology.
+                    </p>
+
+                    <h3>🏥 Healthcare Facilities</h3>
+                    <p>
+                        Hospitals require reliable emergency systems. The fire alarm with automatic response, elevator priority handling, and centralized control are critical for patient safety and quick emergency response.
+                    </p>
+
+                    <h3>🏨 Hospitality & Resorts</h3>
+                    <p>
+                        Hotels can use this system to provide seamless guest experience through automated lighting, controlled elevator access, surveillance for security, and rapid emergency response.
+                    </p>
+
+                    <h3>🏭 Industrial Facilities</h3>
+                    <p>
+                        Manufacturing plants benefit from automated fire detection, access control, and centralized monitoring of multiple building systems to ensure worker safety and operational efficiency.
+                    </p>
+                </div>
+
+                <!-- Integration Capabilities -->
+                <div class="detail-section">
+                    <h2>System Components & Technologies Used</h2>
+                    <h3>Microcontrollers & Modules</h3>
+                    <ul>
+                        <li>ESP32 Dev Module (Master Node & Web Server)</li>
+                        <li>Arduino Mega (Fire Alarm System)</li>
+                        <li>Arduino Uno (Car Park Gate & Elevator)</li>
+                        <li>ESP32-CAM (CCTV Surveillance)</li>
+                    </ul>
+
+                    <h3>Sensors & Actuators</h3>
+                    <ul>
+                        <li>DHT11 Temperature & Humidity Sensors (Fire Detection)</li>
+                        <li>RFID Readers (Access Control)</li>
+                        <li>Servo Motors (Gate Control)</li>
+                        <li>NEMA17 Stepper Motor (Elevator)</li>
+                        <li>Relays (Lighting & Actuator Control)</li>
+                    </ul>
+
+                    <h3>Communication Interfaces</h3>
+                    <ul>
+                        <li>WiFi (Web Server & CCTV Feed)</li>
+                        <li>UART Serial (Inter-microcontroller Communication)</li>
+                        <li>SD Card Interface (Image Storage)</li>
+                    </ul>
+
+                    <h3>Programming Languages & Platforms</h3>
+                    <ul>
+                        <li>C++ (Arduino/ESP32 Firmware)</li>
+                        <li>HTML/CSS/JavaScript (Web Interface)</li>
+                        <li>Arduino IDE (Development & Deployment)</li>
+                    </ul>
+                </div>
+
+                <!-- Future Enhancements -->
+                <div class="detail-section">
+                    <h2>Future Enhancements & Scalability</h2>
+                    <ul>
+                        <li><strong>Mobile Application:</strong> Native iOS and Android apps for remote control and monitoring</li>
+                        <li><strong>Cloud Integration:</strong> AWS/Azure cloud backend for data analytics and historical tracking</li>
+                        <li><strong>Machine Learning:</strong> Predictive maintenance and anomaly detection algorithms</li>
+                        <li><strong>Additional Subsystems:</strong> HVAC control, parking availability detection, building access logging</li>
+                        <li><strong>Voice Control:</strong> Integration with Alexa or Google Assistant</li>
+                        <li><strong>Energy Management:</strong> Solar panel integration and battery backup system</li>
+                        <li><strong>Advanced Security:</strong> Facial recognition, advanced threat detection</li>
+                        <li><strong>IoT Expansion:</strong> Additional sensor networks and actuator control</li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Support -->
+                <div class="detail-section" style="text-align: center;">
+                    <h2>Explore the Project</h2>
+                    <p style="margin-bottom: 1rem;">
+                        Check out the complete source code and video demonstration of the system in action:
+                    </p>
+                    <p style="margin-bottom: 1.5rem;">
+                        <strong>GitHub Repository:</strong> <a href="https://github.com/rsmpdo/Engineering-Service-Building---Integrated-Building-Management-System" target="_blank" style="color: #00d4ff; text-decoration: none;">View Source Code</a><br>
+                        <strong>YouTube Demo 01:</strong> <a href="https://youtu.be/YK4Gfk_wDa8" target="_blank" style="color: #00d4ff; text-decoration: none;">Watch Project Demonstration</a>
+                        <strong>YouTube Demo 02:</strong> <a href="https://youtu.be/naPJpZvXY2M" target="_blank" style="color: #00d4ff; text-decoration: none;">Watch Project Demonstration</a>
+                    </p>
+                    </p>
+                    <p style="margin-bottom: 2rem; color: #b0b0b0; font-size: 0.95rem;">
+                        Special thanks to <strong>Omindu</strong> and <strong>Bhanuka</strong> for their excellent hardware assembly and system integration work.
+                    </p>
+                    <a href="mailto:rsmpsecond@gmail.com" class="cta-button">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Portfolio. All rights reserved.</p>
+        <p>Engineering Service Building - Integrated Building Management System | University of Ruhuna</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

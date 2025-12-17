@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumping Jack 2D Game | Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .game-embed {
+            width: 100%;
+            height: 600px;
+            border: 2px solid rgba(0, 255, 136, 0.3);
+            border-radius: 10px;
+            margin: 1rem 0;
+            background: #000;
+        }
+        .controls-box {
+            background: rgba(0, 255, 136, 0.1);
+            border: 1px solid rgba(0, 255, 136, 0.3);
+            padding: 1rem;
+            border-radius: 5px;
+            margin: 1rem 0;
+        }
+        .controls-box h4 {
+            color: #00ff88;
+            margin-top: 0;
+        }
+        .controls-box p {
+            color: #b0b0b0;
+            margin: 0.5rem 0;
+        }
+        .key-label {
+            display: inline-block;
+            background: rgba(0, 212, 255, 0.2);
+            border: 1px solid #00d4ff;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-weight: bold;
+            color: #00d4ff;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo">⚡ Portfolio</a>
+        <ul>
+            <li><a href="../index.html#designs">Design & Video</a></li>
+            <li><a href="../index.html#engineering">Engineering</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="project-detail">
+        <div class="detail-container">
+            <a href="../index.html#engineering" class="back-button">← Back to Projects</a>
+
+            <div class="detail-header">
+                <h1>Jumping Jack - 2D Game</h1>
+                <p>Interactive Browser-Based Platformer Game</p>
+            </div>
+
+            <div class="detail-content">
+                <div class="detail-section">
+                    <h2>Project Overview</h2>
+                    <p>
+                        Jumping Jack is an engaging 2D platformer game developed using vanilla JavaScript, HTML5, and CSS3. The game challenges players to navigate through increasingly difficult obstacles while maintaining a running sequence. It demonstrates expertise in game development mechanics, animation, collision detection, and interactive web applications.
+                    </p>
+                    <p>
+                        The game features smooth animations, sound effects, scoring systems, and game-over mechanics - all built from scratch without external game engines.
+                    </p>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Game Features</h2>
+                    <h3>🎮 Core Gameplay</h3>
+                    <ul>
+                        <li>Continuous running mechanic with animated sprite sequences</li>
+                        <li>Dynamic jumping system with realistic physics</li>
+                        <li>Randomly generated obstacles for replayability</li>
+                        <li>Real-time score tracking and display</li>
+                        <li>Collision detection for obstacle avoidance</li>
+                    </ul>
+
+                    <h3>🎨 Visual Design</h3>
+                    <ul>
+                        <li>Character sprites with multiple animation frames</li>
+                        <li>Running animation (8 frames for smooth motion)</li>
+                        <li>Jumping animation (12 frames for realistic arc)</li>
+                        <li>Death animation sequence (10 frames)</li>
+                        <li>Dynamic background scrolling parallax effect</li>
+                        <li>Animated flame obstacles</li>
+                    </ul>
+
+                    <h3>🔊 Audio & Feedback</h3>
+                    <ul>
+                        <li>Running sound effects (looping)</li>
+                        <li>Jump sound effects</li>
+                        <li>Game over/death sound effects</li>
+                        <li>Visual feedback and button animations</li>
+                    </ul>
+
+                    <h3>📊 Game Mechanics</h3>
+                    <ul>
+                        <li>Score increases every 250ms during gameplay</li>
+                        <li>Obstacles spawn with random gaps (400-1000px)</li>
+                        <li>Collision detected within specific zone</li>
+                        <li>Game over screen with final score display</li>
+                        <li>Try Again button for instant replay</li>
+                    </ul>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Technical Implementation</h2>
+                    
+                    <h3>Game Architecture</h3>
+                    <ul>
+                        <li><strong>Rendering:</strong> Canvas-free DOM-based rendering using HTML elements</li>
+                        <li><strong>Animation:</strong> RequestAnimationFrame using SetInterval for frame timing</li>
+                        <li><strong>Physics:</strong> Simple acceleration-based jumping with gravity simulation</li>
+                        <li><strong>Collision:</strong> Rectangle-based collision detection between player and obstacles</li>
+                        <li><strong>State Management:</strong> Multiple game states (running, jumping, dead, game over)</li>
+                    </ul>
+
+                    <h3>Key JavaScript Functions</h3>
+                    <ul>
+                        <li><code>run()</code> - Cycles through running animation frames</li>
+                        <li><code>jump()</code> - Handles vertical movement and jump animation</li>
+                        <li><code>moveBackground()</code> - Creates parallax scrolling effect</li>
+                        <li><code>createBlock()</code> - Generates random obstacles</li>
+                        <li><code>moveBlocks()</code> - Moves obstacles and detects collisions</li>
+                        <li><code>updateScore()</code> - Increments and displays score</li>
+                        <li><code>keyCheck()</code> - Handles keyboard input (Enter to start, Space to jump)</li>
+                        <li><code>dead()</code> - Displays death animation and game over screen</li>
+                    </ul>
+
+                    <h3>Technology Stack</h3>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML5, CSS3, Vanilla JavaScript (ES5)</li>
+                        <li><strong>Graphics:</strong> PNG sprite sheets for characters and obstacles</li>
+                        <li><strong>Audio:</strong> MP3 sound effects</li>
+                        <li><strong>Animation:</strong> CSS and JavaScript timing (100ms frame rate)</li>
+                        <li><strong>Browser APIs:</strong> DOM manipulation, Audio API, Event listeners</li>
+                    </ul>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Play the Game</h2>
+                    <p>Ready to challenge yourself? Click the button below to play Jumping Jack right now!</p>
+                    <div style="text-align: center; margin: 2rem 0;">
+                        <a href="../../games/jumping-jack/index.html" class="cta-button" style="display: inline-block;">🎮 Play Game Now</a>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <div class="controls-box">
+                        <h4>Game Controls</h4>
+                        <p>
+                            <span class="key-label">ENTER</span> - Start the game
+                        </p>
+                        <p>
+                            <span class="key-label">SPACE</span> - Jump over obstacles
+                        </p>
+                        <p style="margin-top: 1rem;">
+                            <strong>Objective:</strong> Avoid the flame obstacles by jumping over them. Each passing obstacle increases your score. The game ends when you collide with an obstacle.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Game Mechanics Details</h2>
+                    
+                    <h3>🏃 Running System</h3>
+                    <p>
+                        The character runs continuously when the game is active. The running animation cycles through 8 sprite frames, creating smooth motion. Each frame updates every 100ms, resulting in a frame rate of 10 FPS for the running animation.
+                    </p>
+
+                    <h3>⬆️ Jumping Physics</h3>
+                    <p>
+                        When the player presses the spacebar, the character enters jump mode. The jump animation has 12 frames:
+                    </p>
+                    <ul>
+                        <li>Frames 1-7: Moving upward (30px per frame)</li>
+                        <li>Frames 8-12: Moving downward (30px per frame)</li>
+                        <li>Total jump height: 210 pixels</li>
+                        <li>Return to ground automatically triggers running mode</li>
+                    </ul>
+
+                    <h3>🔥 Obstacle System</h3>
+                    <p>
+                        Obstacles spawn continuously with randomized gaps between them. Each obstacle:
+                    </p>
+                    <ul>
+                        <li>Has a random gap range of 400-1000 pixels from the previous obstacle</li>
+                        <li>Moves from right to left at 20px per frame</li>
+                        <li>Collision is detected when obstacle is between 60-140px from left edge AND player is on ground</li>
+                        <li>Uses GIF animation for flame effect</li>
+                    </ul>
+
+                    <h3>💯 Scoring System</h3>
+                    <p>
+                        The score increases by 1 point every 250ms during active gameplay. The score is displayed in the top-left corner and updates in real-time. The final score is shown on the game-over screen.
+                    </p>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Development Skills Demonstrated</h2>
+                    <ul>
+                        <li><strong>Game Development:</strong> Core game loop, state management, collision detection</li>
+                        <li><strong>JavaScript:</strong> DOM manipulation, event handling, interval timing, animation logic</li>
+                        <li><strong>Animation:</strong> Sprite sheet animation, parallax scrolling, smooth transitions</li>
+                        <li><strong>Audio:</strong> Sound effect management and looping</li>
+                        <li><strong>User Interaction:</strong> Keyboard input handling and responsive gameplay</li>
+                        <li><strong>Performance:</strong> Optimized collision detection and smooth frame rate</li>
+                        <li><strong>Problem Solving:</strong> Physics simulation, timing management, game state logic</li>
+                    </ul>
+                </div>
+
+                <div class="detail-section">
+                    <h2>Potential Enhancements</h2>
+                    <ul>
+                        <li><strong>Difficulty Progression:</strong> Increasing obstacle speed at higher scores</li>
+                        <li><strong>Power-ups:</strong> Shield, speed boost, or invincibility items</li>
+                        <li><strong>Mobile Support:</strong> Touch controls for mobile devices</li>
+                        <li><strong>Leaderboard:</strong> LocalStorage-based high score tracking</li>
+                        <li><strong>Multiple Levels:</strong> Different difficulty levels and environments</li>
+                        <li><strong>Advanced Physics:</strong> Variable jump heights based on key hold duration</li>
+                        <li><strong>Particle Effects:</strong> Visual effects for collisions and scoring</li>
+                        <li><strong>Canvas Rendering:</strong> Port to HTML5 Canvas for better performance</li>
+                        <li><strong>Responsive Design:</strong> Full mobile and desktop adaptation</li>
+                    </ul>
+                </div>
+
+                <div class="detail-section" style="text-align: center;">
+                    <h2>About This Game</h2>
+                    <p style="margin-bottom: 2rem; color: #b0b0b0;">
+                        This game was my first ever web project and it was developed as a demonstration of web-based game development skills using fundamental web technologies. It showcases the ability to create engaging interactive experiences without relying on external libraries or game engines.
+                    </p>
+                    <a href="mailto:rsmpsecond@gmail.com" class="cta-button">Discuss This Project</a>
+                </div>
+
+                <div class="detail-section" style="text-align: center;">
+                    <h2>Source Code</h2>
+                    <p style="margin-bottom: 1.5rem; color: #b0b0b0;">
+                        View the complete source code on GitHub to see the implementation details and game mechanics.
+                    </p>
+                    <a href="https://github.com/rsmpdo/Jumping-Jack-2D" target="_blank" rel="noopener noreferrer" class="cta-button">View on GitHub →</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Portfolio. All rights reserved.</p>
+        <p>Jumping Jack 2D Game - Web Game Development</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

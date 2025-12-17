@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next Project | Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .coming-soon-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 60vh;
+            text-align: center;
+            gap: 2rem;
+        }
+        .coming-soon-icon {
+            font-size: 5rem;
+            animation: bounce 2s ease-in-out infinite;
+        }
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        .coming-soon-text h2 {
+            font-size: 2.5rem;
+            margin: 0;
+            background: linear-gradient(135deg, #00ff88 0%, #00d4ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .coming-soon-text p {
+            color: #b0b0b0;
+            font-size: 1.1rem;
+            margin: 1rem 0 0 0;
+        }
+        .progress-bar {
+            width: 100%;
+            max-width: 400px;
+            height: 8px;
+            background: rgba(0, 255, 136, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid rgba(0, 255, 136, 0.3);
+        }
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #00ff88 0%, #00d4ff 100%);
+            width: 65%;
+            animation: loading 2s ease-in-out infinite;
+        }
+        @keyframes loading {
+            0%, 100% {
+                width: 65%;
+            }
+            50% {
+                width: 85%;
+            }
+        }
+        .status-message {
+            color: #00ff88;
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="../index.html" class="logo">⚡ Portfolio</a>
+        <ul>
+            <li><a href="../index.html#designs">Design & Video</a></li>
+            <li><a href="../index.html#engineering">Engineering</a></li>
+            <li><a href="../index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="project-detail">
+        <div class="detail-container">
+            <a href="../index.html#engineering" class="back-button">← Back to Projects</a>
+
+            <div class="coming-soon-container">
+                <div class="coming-soon-icon">🚀</div>
+                <div class="coming-soon-text">
+                    <h2>Coming Soon</h2>
+                    <p>Project Details</p>
+                    <p style="color: #808080; font-size: 0.9rem; margin-top: 1rem;">...</p>
+                </div>
+                
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p class="status-message">Under Development - Check back soon! ⭐</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Portfolio. All rights reserved.</p>
+        <p>More projects coming soon...</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

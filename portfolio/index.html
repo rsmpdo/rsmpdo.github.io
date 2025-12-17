@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Projects Showcase</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <a href="#home" class="logo">⚡ Portfolio</a>
+        <ul>
+            <li><a href="#designs">Design & Video</a></li>
+            <li><a href="#engineering">Engineering</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Projects and Services showcase </h1>
+            <p>Shashika Madhusankha | Engineering Undergraduate University of Ruhuna</p>
+            <p style="font-size: 1rem; color: #b0b0b0; margin-bottom: 2rem;">
+                Crafting innovative solutions through Engineering | Creative design ethusiast
+            </p>
+            <button class="cta-button" onclick="document.getElementById('engineering').scrollIntoView()">View My Work</button>
+        </div>
+    </section>
+
+    <!-- Engineering Section (Projects First) -->
+    <section class="engineering-section" id="engineering">
+        <h2>⚙️ Engineering Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">🏢</div>
+                <div class="project-info">
+                    <h3>Building Control System</h3>
+                    <p>Advanced IoT-based building management system for HVAC, lighting, and security control.</p>
+                    <a href="projects/building-control.html" class="project-link">View Project →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🎮</div>
+                <div class="project-info">
+                    <h3>Jumping Jack 2D Game</h3>
+                    <p>Interactive browser-based platformer game built with vanilla JavaScript and CSS animations.</p>
+                    <div style="display: flex; gap: 10px; flex-direction: column;">
+                        <a href="projects/2Dgame.html" class="project-link">View Project →</a>
+                        <a href="games/jumping-jack/index.html" class="project-link" style="color: #ff006e; font-weight: bold;">▶ Play Game</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🔧</div>
+                <div class="project-info">
+                    <h3>Coming Soon</h3>
+                    <p>Yet to be updated</p>
+                    <a href="projects/system-optimization.html" class="project-link">View Project →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design & Video Editing Section (Services After) -->
+    <section class="design-section" id="designs">
+        <h2>🎨 Design & Video Editing</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">🎬</div>
+                <div class="project-info">
+                    <h3>2D Motion Graphics</h3>
+                    <p>2D animations and dynamic visual effects creation for engaging video content.</p>
+                    <a href="projects/motion-graphics.html" class="project-link">See Services →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🎨</div>
+                <div class="project-info">
+                    <h3>Graphic Design</h3>
+                    <p>Creative visual design and digital art for branding, digital, and print media.</p>
+                    <a href="projects/graphic-design.html" class="project-link">See Services →</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">✂️</div>
+                <div class="project-info">
+                    <h3>Video Editing</h3>
+                    <p>Professional video editing services with color grading, transitions, and effects.</p>
+                    <a href="projects/video-editing.html" class="project-link">See Services →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="text-align: center;">
+        <h2>Get In Touch</h2>
+        <p style="font-size: 1.2rem; color: #b0b0b0; margin-bottom: 2rem;">
+            Let's collaborate on your next project
+        </p>
+        <a href="mailto:rsmpsecond@gmail.com" class="cta-button">Send Email</a>
+        
+        <div style="margin-top: 3rem; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap;">
+            <a href="https://www.linkedin.com/in/shashika-madhusankha-99aab9311/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; color: #00d4ff; text-decoration: none; font-size: 1rem; transition: all 0.3s; padding: 10px 20px; border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 5px;" onmouseover="this.style.borderColor='#00d4ff'; this.style.color='#00ff88';" onmouseout="this.style.borderColor='rgba(0, 212, 255, 0.3)'; this.style.color='#00d4ff';">
+                <span>🔗</span> LinkedIn
+            </a>
+            <a href="https://github.com/rsmpdo" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 0.5rem; color: #00d4ff; text-decoration: none; font-size: 1rem; transition: all 0.3s; padding: 10px 20px; border: 1px solid rgba(0, 212, 255, 0.3); border-radius: 5px;" onmouseover="this.style.borderColor='#00d4ff'; this.style.color='#00ff88';" onmouseout="this.style.borderColor='rgba(0, 212, 255, 0.3)'; this.style.color='#00d4ff';">
+                <span>💻</span> GitHub
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Shashika Madhusankha. All rights reserved.</p>
+        <p>Crafted with innovation and creativity</p>
+        <div style="margin-top: 1rem; display: flex; gap: 1rem; justify-content: center;">
+            <a href="https://www.linkedin.com/in/shashika-madhusankha-99aab9311/" target="_blank" rel="noopener noreferrer" style="color: #707070; text-decoration: none; transition: color 0.3s;" title="LinkedIn Profile">
+                LinkedIn
+            </a>
+            <span style="color: #505050;">•</span>
+            <a href="https://github.com/rsmpdo" target="_blank" rel="noopener noreferrer" style="color: #707070; text-decoration: none; transition: color 0.3s;" title="GitHub Profile">
+                GitHub
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

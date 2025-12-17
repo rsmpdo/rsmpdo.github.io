@@ -1,0 +1,105 @@
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a3d5c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a1f3d;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0.2" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1920" height="1080" fill="url(#grad1)"/>
+  
+  <!-- Grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(0,255,136,0.1)" stroke-width="1"/>
+  </pattern>
+  <rect width="1920" height="1080" fill="url(#grid)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="1600" cy="300" r="200" fill="url(#grad2)" opacity="0.3"/>
+  <circle cx="300" cy="900" r="150" fill="url(#grad2)" opacity="0.3"/>
+  
+  <!-- Dashboard mockup -->
+  <g id="dashboard">
+    <!-- Header bar -->
+    <rect x="100" y="100" width="1720" height="60" fill="rgba(0,255,136,0.1)" stroke="rgba(0,255,136,0.3)" stroke-width="2" rx="5"/>
+    <text x="120" y="140" font-family="Arial" font-size="24" fill="#00ff88" font-weight="bold">Building Control Dashboard</text>
+    
+    <!-- Main panels -->
+    <!-- Left panel -->
+    <rect x="100" y="200" width="380" height="750" fill="rgba(0,255,136,0.05)" stroke="rgba(0,255,136,0.2)" stroke-width="2" rx="10"/>
+    <text x="120" y="230" font-family="Arial" font-size="16" fill="#00d4ff" font-weight="bold">System Status</text>
+    
+    <!-- Metric boxes in left panel -->
+    <rect x="120" y="260" width="340" height="80" fill="rgba(0,255,136,0.1)" stroke="rgba(0,255,136,0.3)" stroke-width="1" rx="5"/>
+    <text x="140" y="285" font-family="Arial" font-size="12" fill="#b0b0b0">Temperature</text>
+    <text x="140" y="320" font-family="Arial" font-size="28" fill="#00ff88" font-weight="bold">72°F</text>
+    
+    <rect x="120" y="360" width="340" height="80" fill="rgba(0,212,255,0.1)" stroke="rgba(0,212,255,0.3)" stroke-width="1" rx="5"/>
+    <text x="140" y="385" font-family="Arial" font-size="12" fill="#b0b0b0">Humidity</text>
+    <text x="140" y="420" font-family="Arial" font-size="28" fill="#00d4ff" font-weight="bold">45%</text>
+    
+    <rect x="120" y="460" width="340" height="80" fill="rgba(0,255,136,0.1)" stroke="rgba(0,255,136,0.3)" stroke-width="1" rx="5"/>
+    <text x="140" y="485" font-family="Arial" font-size="12" fill="#b0b0b0">Occupancy</text>
+    <text x="140" y="520" font-family="Arial" font-size="28" fill="#00ff88" font-weight="bold">142/200</text>
+    
+    <rect x="120" y="560" width="340" height="80" fill="rgba(255,0,110,0.1)" stroke="rgba(255,0,110,0.3)" stroke-width="1" rx="5"/>
+    <text x="140" y="585" font-family="Arial" font-size="12" fill="#b0b0b0">Energy Usage</text>
+    <text x="140" y="620" font-family="Arial" font-size="28" fill="#ff006e" font-weight="bold">45.2 kW</text>
+    
+    <!-- Middle panels -->
+    <rect x="520" y="200" width="820" height="350" fill="rgba(0,255,136,0.05)" stroke="rgba(0,255,136,0.2)" stroke-width="2" rx="10"/>
+    <text x="540" y="230" font-family="Arial" font-size="16" fill="#00d4ff" font-weight="bold">Energy Consumption (24h)</text>
+    
+    <!-- Simple chart -->
+    <polyline points="560,450 620,420 680,440 740,380 800,400 860,350 920,370 980,330 1040,360 1100,320 1160,340 1220,300" 
+              stroke="#00ff88" stroke-width="3" fill="none"/>
+    <rect x="560" y="450" width="670" height="2" fill="rgba(0,255,136,0.2)"/>
+    
+    <!-- Bottom right panel -->
+    <rect x="520" y="580" width="820" height="370" fill="rgba(0,212,255,0.05)" stroke="rgba(0,212,255,0.2)" stroke-width="2" rx="10"/>
+    <text x="540" y="610" font-family="Arial" font-size="16" fill="#00d4ff" font-weight="bold">Active Alerts & System Health</text>
+    
+    <!-- Alert items -->
+    <rect x="540" y="640" width="780" height="50" fill="rgba(0,255,136,0.1)" stroke="rgba(0,255,136,0.2)" stroke-width="1" rx="3"/>
+    <circle cx="560" cy="665" r="6" fill="#00ff88"/>
+    <text x="580" y="670" font-family="Arial" font-size="12" fill="#b0b0b0">✓ HVAC System: Optimal Performance</text>
+    
+    <rect x="540" y="700" width="780" height="50" fill="rgba(0,212,255,0.1)" stroke="rgba(0,212,255,0.2)" stroke-width="1" rx="3"/>
+    <circle cx="560" cy="725" r="6" fill="#00d4ff"/>
+    <text x="580" y="730" font-family="Arial" font-size="12" fill="#b0b0b0">✓ Lighting: 87% Efficiency</text>
+    
+    <rect x="540" y="760" width="780" height="50" fill="rgba(255,0,110,0.1)" stroke="rgba(255,0,110,0.3)" stroke-width="1" rx="3"/>
+    <circle cx="560" cy="785" r="6" fill="#ff006e"/>
+    <text x="580" y="790" font-family="Arial" font-size="12" fill="#b0b0b0">⚠ East Wing: Temperature spike detected - Investigating</text>
+    
+    <!-- Right panel -->
+    <rect x="1380" y="200" width="440" height="750" fill="rgba(0,255,136,0.05)" stroke="rgba(0,255,136,0.2)" stroke-width="2" rx="10"/>
+    <text x="1400" y="230" font-family="Arial" font-size="16" fill="#00d4ff" font-weight="bold">Zone Controls</text>
+    
+    <!-- Zone items -->
+    <rect x="1400" y="260" width="400" height="70" fill="rgba(0,255,136,0.1)" stroke="rgba(0,255,136,0.2)" stroke-width="1" rx="5"/>
+    <text x="1420" y="285" font-family="Arial" font-size="13" fill="#00ff88" font-weight="bold">Main Office</text>
+    <text x="1420" y="310" font-family="Arial" font-size="11" fill="#b0b0b0">AC: ON | Lights: 80% | Occupancy: 24</text>
+    
+    <rect x="1400" y="350" width="400" height="70" fill="rgba(0,212,255,0.1)" stroke="rgba(0,212,255,0.2)" stroke-width="1" rx="5"/>
+    <text x="1420" y="375" font-family="Arial" font-size="13" fill="#00d4ff" font-weight="bold">Conference Room A</text>
+    <text x="1420" y="400" font-family="Arial" font-size="11" fill="#b0b0b0">AC: ON | Lights: 100% | Occupancy: 12</text>
+    
+    <rect x="1400" y="440" width="400" height="70" fill="rgba(0,255,136,0.1)" stroke="rgba(0,255,136,0.2)" stroke-width="1" rx="5"/>
+    <text x="1420" y="465" font-family="Arial" font-size="13" fill="#00ff88" font-weight="bold">Server Room</text>
+    <text x="1420" y="490" font-family="Arial" font-size="11" fill="#b0b0b0">AC: ON | Lights: 20% | Occupancy: 0</text>
+    
+    <rect x="1400" y="530" width="400" height="70" fill="rgba(255,0,110,0.1)" stroke="rgba(255,0,110,0.2)" stroke-width="1" rx="5"/>
+    <text x="1420" y="555" font-family="Arial" font-size="13" fill="#ff006e" font-weight="bold">East Wing</text>
+    <text x="1420" y="580" font-family="Arial" font-size="11" fill="#b0b0b0">AC: ALERT | Lights: 90% | Occupancy: 8</text>
+    
+    <rect x="1400" y="620" width="400" height="70" fill="rgba(0,255,136,0.1)" stroke="rgba(0,255,136,0.2)" stroke-width="1" rx="5"/>
+    <text x="1420" y="645" font-family="Arial" font-size="13" fill="#00ff88" font-weight="bold">Cafeteria</text>
+    <text x="1420" y="670" font-family="Arial" font-size="11" fill="#b0b0b0">AC: ON | Lights: 95% | Occupancy: 45</text>
+  </g>
+</svg>
